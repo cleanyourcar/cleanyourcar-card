@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean Your Car</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem 1.25rem;
+  }
+  .card {
+    background: #0d0d0d;
+    border-radius: 20px;
+    padding: 2rem 1.75rem;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    border: 1px solid #1a1a1a;
+  }
+  .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+  .name span { color: #a855f7; text-shadow: 0 0 10px rgba(168,85,247,0.6); }
+  .divider {
+    width: 30px; height: 1px;
+    background: linear-gradient(90deg, transparent, #a855f7, transparent);
+    margin: 0.6rem auto 1.75rem;
+  }
+  .contacts { display: flex; flex-direction: column; gap: 0.6rem; }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.7rem 0.9rem;
+    text-decoration: none;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid rgba(168,85,247,0.2);
+    background: rgba(168,85,247,0.03);
+    box-shadow: 0 0 10px rgba(168,85,247,0.08);
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .row::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(168,85,247,0.4), transparent);
+  }
+  .row:hover, .row:active {
+    color: #fff;
+    border-color: rgba(168,85,247,0.5);
+    background: rgba(168,85,247,0.07);
+    box-shadow: 0 0 16px rgba(168,85,247,0.18);
+  }
+  .icon-bg {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: rgba(168,85,247,0.08);
+    border: 1px solid rgba(168,85,247,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .save-btn {
+    margin-top: 1.25rem;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1px solid rgba(168,85,247,0.5);
+    background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(124,58,237,0.08));
+    color: #a855f7;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 16px rgba(168,85,247,0.15);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+  .save-btn:hover, .save-btn:active {
+    background: linear-gradient(135deg, rgba(168,85,247,0.25), rgba(124,58,237,0.15));
+    box-shadow: 0 0 24px rgba(168,85,247,0.3);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="name"><span>CLEAN</span> YOUR CAR</div>
+  <div class="divider"></div>
+
+  <div class="contacts">
+    <a class="row" href="tel:0767134487">
+      <div class="icon-bg">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+      </div>
+      07 67 13 44 87
+    </a>
+
+    <a class="row" href="https://www.instagram.com/cleanyourcar_68" target="_blank" rel="noopener">
+      <div class="icon-bg">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      </div>
+      @cleanyourcar_68
+    </a>
+
+    <a class="row" href="mailto:cleanyourcar.contact@gmail.com">
+      <div class="icon-bg">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </div>
+      cleanyourcar.contact@gmail.com
+    </a>
+  </div>
+
+  <a class="save-btn" id="saveBtn" href="#">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+      <circle cx="12" cy="7" r="4"/>
+    </svg>
+    Ajouter aux contacts
+  </a>
+</div>
+
+<script>
+  const vcf = `BEGIN:VCARD\nVERSION:3.0\nFN:Clean Your Car\nORG:Clean Your Car\nTEL:0767134487\nEMAIL:cleanyourcar.contact@gmail.com\nURL:https://www.instagram.com/cleanyourcar_68\nEND:VCARD`;
+  const blob = new Blob([vcf], { type: 'text/vcard' });
+  const btn = document.getElementById('saveBtn');
+  btn.href = URL.createObjectURL(blob);
+  btn.download = 'cleanyourcar.vcf';
+</script>
+</body>
+</html>
